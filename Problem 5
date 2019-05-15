@@ -1,0 +1,29 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+	int X = 1;
+	cout << "Processing. Please wait.\n";
+	
+	for (int i=1;i<=20;i++)
+	
+	{
+		if (X < 10)
+		{
+		cout << x++ << ", ";
+		}
+		
+		else 
+		
+		{
+		cout << x << ", "; 
+		X = X+2;
+		}
+	}
+	
+_getch();
+return 0;
+}
