@@ -1,0 +1,96 @@
+#include <iostream>
+	#include <conio.h>
+	
+	using namespace std;
+	
+	int main()
+	{
+		char packages;
+		int A, B, C; 
+		double hr, a1, b2;
+	
+		A = 995;
+		B = 1495;
+		C = 1995;
+	
+		cout << "Hello our beloved customer! This is your internet service provider \n";
+		cout << "We currently need the details of package they subscribed for \n";
+		cout << "to give your monthly bill \n";
+	
+		cout << "\n\t\Below is the list of Subscription Packages \n";
+		cout << "Package [A]: For P995/mo 10 hrs of access are provided. Additional hours are P20/hr. \n";
+		cout << "Package [B]: For P1495/mo 20 hrs of access are provided. Additional hours are P10/hr. \n";
+		cout << "Package [C]: For P1995/mo of unlimited access is provided. \n";
+	
+		cout << "\n";
+		cout << "\n";
+	
+		cout << "What kind of subscription package did they use? : ";
+		cin >> packages;
+	
+		switch (packages)
+		{
+				case 'a':
+				case 'A':
+					cout << "\n";
+					cout << "Hello! You are currently subscribed to Package A. \n";
+					cout << "How many hours have you used in your subscription last month? ";
+					cin >> hour;
+	
+					if (hr <= 10)
+					{
+					cout << "This would be your total amount needed to pay on the next due: " << A;
+					cout << "\n";
+					cout << "Thank you for your continued support to the company!\n";
+					}
+					else 
+					{		
+					a1 = (hr - 10)*20 + 995; 
+					cout << "This would be your total amount needed to pay on the next due: " << a1;
+					cout << "\n";
+					cout << "Thank you for your continued support to the company!\n";
+					}
+					break;
+					
+					
+				case 'b':
+				case 'B':
+					cout << "\n";
+					cout << "Hello! You are currently subscribed to Package B. \n";
+					cout << "How many hours have you used in your subscription last month? ";
+					cin >> hr;
+					if (hr <= 20)
+					{
+					cout << "This would be your total amount needed to pay on the next due: " << B;
+					cout << "\n";
+					cout << "Thank you for your continued support to the company!\n";
+					}
+					else 
+					{	
+					b2 = (hr - 20)*10 +1495;
+					cout << "\nThis would be your total amount needed to pay on the next due: " << b2;
+					cout << "\n";
+					cout << "Thank you for your continued support to the company!\n";
+					}
+					break;
+					
+					
+				case 'c':
+				case 'C':
+					{
+					cout << "\n";
+					cout << "Customer! You are currently subscribed to Package C.";
+					cout << "This would be your total amount needed to pay on the next due: " << C;
+					cout << "\n";
+					cout << "Thank you for your continued support to the company!\n";
+					}
+					break;
+					
+					
+				default:
+				cout << "Only type letters A,B,and C.\n";
+				}
+	
+		_getch();
+		return 0;
+	}
