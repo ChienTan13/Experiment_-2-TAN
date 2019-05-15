@@ -1,0 +1,42 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main ()
+{
+	double Bal, CC, GU;
+	CC = 1.10;
+
+	cout << "\t\t Water Consumption Computation \n";
+	cout << "\n";
+	
+	cout << "What is their balance last month? \n";
+	cin >> Bal;
+	cout << "\n";
+	
+	cout << "What is their previous consumption in gallons? \n";
+	cin >> GU;
+	cout << "/n";
+	
+	if (Bal <= 0)
+	{
+	cout << "Their next balance next month will be: ";
+	cout << 35 + (CC*GU);
+	cout << "\n";
+	cout << "Thank you for their continued support!";
+	}
+	
+	else 
+	
+	{
+	cout << "They stil have an existing balnce of: P" << Bal << ". \n";
+	cout << "\n";
+	cout << "They still need to pay their unpaid balance in their next balance of:P" << 35 + 20 + Bal + (CC*GU) << ". \n";
+	cout << "\n";
+	cout << "Thank you for their continued support!";
+	}
+	
+_getch();
+return 0;
+}
