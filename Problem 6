@@ -1,0 +1,25 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+	int a,b,c,x;
+	
+	a = 0;
+	b = 1;
+	
+
+	cout << "The Fibonacci numbers are the following: \n";
+	for (x = 1; x <=21; x++)
+	{
+		cout << c << ", ";
+		c = a + b;
+		a = b;
+		b = c;
+	}
+	
+_getch();
+return 0;
+}
