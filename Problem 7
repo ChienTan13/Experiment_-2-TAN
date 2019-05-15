@@ -1,0 +1,33 @@
+#include <iostream>
+#include <conio.h>
+using namespace std;
+
+int main()
+{
+	int number1, sum = 0;
+	B:
+	cout << "\n";
+	cout << "\n";
+	cout << "Enter any number: ";
+	cin >> number1;
+	
+	for (int i=1; i<=number1; i++){
+		sum = sum + i;
+		
+	}
+	
+	if (number1 > 0)
+	{
+	cout << "The sum of all whole numbers from 1 to your chosen number" << num1 << " is: " << sum;
+		goto B;
+	}
+	
+	else 
+	
+	{
+		cout << "Thank you for using this program!";
+	}
+	
+_getch();
+return 0;
+}
